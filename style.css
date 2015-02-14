@@ -1,0 +1,148 @@
+/*
+Theme Name: Finch
+Description: Finch is a lightweight, HTML5, responsive two column theme with a light content area and dark background.
+Author: Michael Burrows
+Author URI: http://www.wpmultiverse.com/
+Theme URI: http://www.wpmultiverse.com/themes/finch/
+Tags: blue, gray, dark, two-columns, responsive-layout, custom-menu, editor-style, featured-images, sticky-post
+Version: 1.0.3
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Finch WordPress Theme, Copyright 2014 wpmultiverse.com
+Finch WordPress Theme is distributed under the terms of the GNU GPL
+Text Domain: finch
+*/
+
+body {background-color:#293136; color:#293136; font-family:'Oxygen',sans-serif; font-size:16px;}
+h1, h2, h3, h4, h5, h6 {margin-top:0;}
+a {color:#3485b4;}
+a:hover {color:#293136;}
+#content-holder {background-color:#fff; margin:0; padding:30px;}
+
+/* ----- header & footer ----- */
+header {text-align:center; padding-top:45px;}
+header #blog-name {color:#fff; font-size:24px; font-weight:bold; text-transform:uppercase; display:inline-block; border-bottom:3px solid #3485b4; padding-bottom:4px; margin-bottom:10px;}
+header #description {color:#888; margin-bottom:40px; font-style:italic;}
+header nav {background-color:#455159; font-weight:bold; width:100%;}
+header nav ul {position:relative; padding:0; margin:0;}
+header nav li {display:inline-block; border-top:4px solid #455159; margin-right:-5px;}
+header nav li:hover {border-color:#4c575f; background-color:#4c575f;}
+header nav li:hover a {color:#fff;}
+header nav li a {color:#ccc; display:block; padding:16px 35px 20px 35px;}
+header nav li a:hover {background-color:#4c575f; color:#fff;}
+header nav li.current-menu-item {border-top:4px solid #3485b4;}
+header nav li.current-menu-item a {background-color:#3c464d; color:#fff;}
+header nav .sub-menu {display:none; position:absolute; z-index:9999; background-color:#eaeaea; text-align:left;}
+header nav .sub-menu li {white-space:nowrap; font-size:12px; text-transform:none; padding:0; display:block; border:0; margin:0;}
+header nav .sub-menu li a {padding:8px 35px; width:100%; display:block; color:#293136;}
+header nav .sub-menu li a:hover {color:#fff;}
+footer {background-color:#455159; margin-bottom:60px; color:#999;}
+#footer-top a {color:#fff;}
+#footer-top {background-color:#3c464d; text-align:center; padding:15px 0;}
+#footer-top .menu {margin-bottom:30px;}
+#footer-top .menu li {display:inline; margin-right:15px; font-size:15px;}
+#footer-top .search-form {border:2px solid #4c575f; width:420px; margin:20px auto;}
+#footer-top .search-form label {margin:0;}
+#footer-top input[type=search] {background-color:#3c464d; color:#fff; display:inline; width:332px; margin:0; border:0;}
+#footer-top input[type=submit] {padding:12px 18px; -webkit-border-radius:0; -moz-border-radius:0; border-radius:0;}
+#footer-bottom {font-size:14px; text-align:center;}
+#footer-bottom span {margin-right:8px;}
+#footer-bottom a {color:#999; margin:0 8px;}
+
+/* ----- widgets ----- */
+.widget {font-size:14px; line-height:1.6em; margin-bottom:30px; padding-bottom:30px; border-bottom:1px solid #eee;}
+.widget h3 {font-size:16px;}
+.widget img {display:inline-block; height:auto; max-width:100%;}
+.widget select {max-width:100%}
+.widget ul {padding:0; margin-left:14px;}
+.widget_recent_entries ul {margin-left:0;}
+.widget_recent_entries ul li {list-style:none; border-bottom:1px dotted #eee; padding:7px 0;}
+.widget_tag_cloud a {font-size:12px!important; background-color:#293136; color:#fff; padding:3px 6px; display:inline-block; margin:0 6px 6px 0;}
+.widget_tag_cloud a:hover {background-color:#3485b4;}
+.widget_calendar table {width:100%;}
+.widget_calendar table td {text-align:center;}
+.widget_search input[type=text] {width:78%;}
+
+/* ----- posts & pages ----- */
+article {line-height:1.8em; padding:0 30px 15px 0; margin:0 30px 30px 0; border-bottom:1px solid #eee;}
+article h1 {font-size:30px;}
+article h2 {font-size:26px;}
+article h3 {font-size:24px}
+article h4 {font-size:21px;}
+article h5 {font-size:18px;}
+article h6 {font-size:16px;}
+article p {margin-bottom:30px;}
+article img {display:inline-block; height:auto; max-width:100%;}
+article ul {padding:0; margin-left:16px;}
+article blockquote {border-left:4px solid #3485b4; padding-left:30px; color:#aaa; font-style:italic;}
+article table {width:100%; margin-bottom:30px;}
+article td, article th {border:1px solid #ccc; padding:4px 8px;}
+article dt {font-weight:bold;}
+article dd {margin:0;}
+article embed {max-width:100%;}
+#post-title, .post-title {font-weight:normal; font-size:36px; line-height:46px;}
+.post-title a {color:#293136;}
+.post-title a:hover {color:#3485b4;}
+.post-meta {color:#aaa; text-transform:uppercase;}
+.post-meta .sticky {border-left:3px solid #3485b4; color:#293136; padding-left:8px;}
+.post-tags {color:#3485b4; font-size:12px;}
+.post-tags span {font-size:10px;}
+.post-tags a {margin-right:6px;}
+.hr {width:60px; margin-top:50px; margin-left:0; border-color:#eee; border-width:2px;}
+.attachment-featured {margin-bottom:30px; display:inline-block; height:auto; max-width:100%;}
+.wp-caption, .gallery-caption {max-width:97%; font-size:14px;}
+.wp-caption-text {color:#999; margin-top:2px;}
+.aligncenter {text-align:center;}
+.alignleft {float:left; margin-right:15px;}
+.alignright {float:right; margin-left:15px;}
+
+/* ----- pagers ----- */
+.page-numbers {border:1px solid #ccc; padding:5px 12px; font-size:14px; display:inline-block; background-color:#eee; -webkit-border-radius:99px; -moz-border-radius:99px; border-radius:99px; color:#aaa; margin-right:5px;}
+.current {background-color:transparent; color:#293136;}
+.page-links {margin-bottom:60px;}
+.paged-post {margin-bottom:30px;}
+
+/* ----- comments ----- */
+#comments {font-size:14px;}
+#comments-title {font-size:20px;}
+.comment-list {padding:0;}
+.comment-list li {list-style:none; margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid #eee; line-height:1.5em;}
+.comment-author .avatar {float:left; margin-right:10px;}
+.comment-author a {color:#aaa; font-size:0.9em;}
+.bypostauthor .comment-author {font-weight:bold;}
+#commentform .comment-notes {margin-bottom:20px; color:#aaa;}
+#commentform label {display:none;}
+#commentform #author {float:left; margin-bottom:25px;}
+#commentform #author, #commentform #email {width:42%;}
+.form-allowed-tags {display:none;}
+
+/* ----- form elements ----- */
+input[type=text], input[type=password], input[type=search], textarea {border:1px solid #ddd; margin-right:5px; padding:12px; width:85%; font-size:14px; color:#222; margin-bottom:10px; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+input[type=submit], input[type=reset] {background-color:#293136; border:0; color:#fff; padding:10px 14px; text-align:center; font-size:14px; -webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px;}
+input[type=password] {width:100%;}
+.screen-reader-text {display:none;}
+
+/* -- media queries -- */
+@media (min-width:1280px) {
+	.container {width:1280px;}
+}
+@media (max-width:992px) {
+	header nav li a {padding:12px 25px 18px 25px; font-size:15px;}
+	header nav .sub-menu {display:none; position:absolute; z-index:9999; background-color:#eaeaea; text-align:left;}
+	header nav .sub-menu li a {font-size:12px; padding:8px 25px;}
+}
+@media (max-width:768px) {
+	header {padding-top:15px;}
+	header #blog-name {font-size:20px;}
+	header #description {margin-bottom:20px;}
+	header nav li a {padding:8px 17px 12px 17px; font-size:14px;}
+	#content-holder {padding:0;}
+	article {margin-right:0; padding:0 0 10px 0;}
+	#post-title, .post-title {font-size:28px;}
+	#footer-top .search-form {width:300px;}
+	#footer-top input[type=search] {width:212px;}
+}
+@media (max-width:360px) {
+	#footer-top .search-form {width:268px;}
+	#footer-top input[type=search] {width:180px;}
+}
