@@ -146,3 +146,13 @@ input[type=password] {width:100%;}
 	#footer-top .search-form {width:268px;}
 	#footer-top input[type=search] {width:180px;}
 }
+
+
+/* fix Altervista stuff */
+#av-social-share .av-social-btn a {
+  height: 22px !important;
+}
+
+#av-social-share .av-social-btn .av-social-count {
+  height: 16px !important;
+}
